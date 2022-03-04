@@ -2,7 +2,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import About from './components/About';
+import About from './components/About';
 // import ContactForm from './components/Contact';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div>
       <Header></Header>
       <main>
-    {/* <About></About> */}
+    <About></About>
     {/* <ContactForm></ContactForm> */}
       </main>
       <Footer></Footer>
