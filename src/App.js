@@ -11,9 +11,9 @@ function App() {
     <div>
       <Header></Header>
       <main>
-        {/* <Resume></Resume> */}
+        <Resume></Resume>
     {/* <About></About> */}
-    <ContactForm></ContactForm>
+    {/* <ContactForm></ContactForm> */}
       </main>
       <Footer></Footer>
     </div>
