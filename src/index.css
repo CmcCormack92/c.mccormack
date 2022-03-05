@@ -1,9 +1,9 @@
 * {
-  background-image: url("./assets/background/pexels-anthony-macajone-1874636.jpg");
+  background-image: url("./assets/background/background.jpg");
   background-size: cover;
   background-position: 80%;
   background-attachment: fixed;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: serif;
 }
 
 header {
@@ -29,14 +29,15 @@ header h2 {
   margin: 0;
 }
 
-ul {
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
   display: flex;
   width: 100%;
   padding-right: 20px;
-}
-
-li {
-  list-style: none;
 }
 
 nav li:hover {
@@ -45,6 +46,7 @@ nav li:hover {
 }
 
 nav  li {
+  list-style: none;
   cursor: pointer;
   padding: 0px 10px 0px 10px;
 }
@@ -56,28 +58,95 @@ nav  li {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  padding-top: 9%;
+  width: 70%;
+  padding-top: 5%;
+}
+
+.img-wrapper {
+  width: 35%;
+  padding-left: 2%;
+  margin: none;
 }
 
 .about-me p {
  width: 50%;
  font-size: larger;
+ font-family: optima;
 }
 
 .img-wrapper img {
-  height: 300px;
-  width: 300px;
-  border: 3px solid white;
+  height: 250px;
+  width: 250px;
+  border: 5px solid white;
   border-radius: 50%;
   margin: 10%;
+}
+
+.resume {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  color: white;
+  padding-top: 9%;
+}
+
+.download-wrapper {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.resume a {
+  text-decoration: none;
+  color:white;
+  padding-left: 4%;
+  font-size: x-large;
+  color: rgb(7, 154, 252);
+}
+
+.resume a:hover {
+  opacity: .7;
+}
+
+.resume a span {
+  padding-right: 10px;
+}
+
+.resume ul h3, .resume ul li {
+  font-family: optima;
+  list-style: none;
+  padding: 1%;
+}
+
+.front-end, .back-end {
+  margin-top: 2%;
+  list-style: none;
+  height: 100%;
+  width: 40%
 }
 
 main {
   height: 500px;
 }
 
+form {
+  width: 40%;
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+  background-color: white;
+}
+
+input:focus {
+  border: 1px solid white;
+  box-shadow: 0 0 .25rem rgba(255, 255, 255, .5);
+}
+
 footer {
-  color: white;
   position: fixed;
   bottom: 0;
   display: flex;
@@ -88,11 +157,11 @@ footer {
 .icon {
   height: 50px;
   width: 50px;
-  color: rgb(163, 159, 159);
+  color: rgb(151, 149, 149);
   padding: 0px 10px 5px 10px;
   background: transparent;
 }
 
 .icon:hover {
-  opacity: .7;
+  opacity: .5;
 }

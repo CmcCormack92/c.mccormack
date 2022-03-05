@@ -11,17 +11,17 @@ function Footer() {
     return (
         <footer>
                 <div>
-                    <a>
+                    <a href='https://github.com/CmcCormack92' target='_blank'>
                         <FontAwesomeIcon className='icon' icon={faGithub} />
                     </a>
                 </div>
                 <div>
-                    <a>
+                    <a href='https://www.linkedin.com/in/christopher-mccormack-59a59321b/' target='_blank'>
                         <FontAwesomeIcon className='icon' icon={faLinkedin} />
                     </a>
                 </div>
                 <div>
-                    <a>
+                    <a href='mailto:chrismack135@gmail.com' target='_blank'>
                         <FontAwesomeIcon className='icon' icon={faEnvelope} />
                     </a>
                 </div>

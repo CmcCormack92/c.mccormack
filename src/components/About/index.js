@@ -7,13 +7,11 @@ function About() {
             <div className="img-wrapper">
                 <img src={aboutImage} alt="self image" />
             </div>
+            {/* <div className='info-wrapper'> */}
             <p>
-                I'm a Front End Web developer located in sunny Tampa Bay, Florida.
-                As a father of three (six if you count dogs), most of my time outside of work is happily spent with
-                family.
-                But on the occasion that i do get some time to myself, you can find me at the beach, biking or even
-                just relaxing with a good book.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla alias est maxime voluptatem commodi esse temporibus autem repellat quia adipisci cupiditate labore possimus quos repudiandae voluptate, dolor ipsa itaque? Porro!
             </p>
+            {/* </div> */}
         </section>
     );
 }
