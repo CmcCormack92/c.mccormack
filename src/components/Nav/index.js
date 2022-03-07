@@ -25,7 +25,7 @@ function Nav(props) {
                 </a>
             </div>
             <nav>
-            <ul className="flex-row">
+            <ul>
                     {navLinks.map(link => (
                         <li
                             className={`${currentNavLink === link && 'navActive'}`}
