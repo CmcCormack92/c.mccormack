@@ -7,11 +7,10 @@ function About() {
             <div className="img-wrapper">
                 <img src={aboutImage} alt="self image" />
             </div>
-            {/* <div className='info-wrapper'> */}
             <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla alias est maxime voluptatem commodi esse temporibus autem repellat quia adipisci cupiditate labore possimus quos repudiandae voluptate, dolor ipsa itaque? Porro!
             </p>
-            {/* </div> */}
+            
         </section>
     );
 }
