@@ -11,7 +11,7 @@ function Resume() {
             </div>
             <div className='front-end'>
                 <ul>
-                    <h3>Front End Proficiencies</h3>
+                    <h2>Front End Proficiencies</h2>
                     <li>JavaScript</li>
                     <li>JQuery</li>
                     <li>React</li>
@@ -23,7 +23,7 @@ function Resume() {
             </div>
             <div className='back-end'>
                 <ul>
-                    <h3>Back End Proficiencies</h3>
+                    <h2>Back End Proficiencies</h2>
                     <li>APIs</li>
                     <li>Node</li>
                     <li>Express</li>

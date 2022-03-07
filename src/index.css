@@ -1,6 +1,4 @@
-
-   
-* {
+html {
   background-image: url("./assets/background/background.jpg");
   background-size: cover;
   background-position: 80%;
@@ -11,16 +9,31 @@
 header {
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: larger;
   flex-wrap: wrap;
   align-items: center;
 }
 
 .header-wrapper {
-  display: inline;
-  text-align: center;
-  padding-left: 5%;
+  padding-left: 2%;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  border: 5px solid rgb(155, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+.navActive {
+  color: rgb(155, 0, 0);
+  font-weight: bold;
 }
 
 header h1 {
@@ -29,17 +42,34 @@ header h1 {
 
 header h2 {
   margin: 0;
+  font-weight: lighter;
+}
+
+.logo-wrap {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0 0 2%;
 }
 
 header a {
   text-decoration: none;
   color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  margin-right: 2%;
 }
 
 nav ul {
   display: flex;
   width: 100%;
-  padding-right: 20px;
+  justify-content: space-between;
 }
 
 nav li:hover {
@@ -50,7 +80,7 @@ nav li:hover {
 nav  li {
   list-style: none;
   cursor: pointer;
-  padding: 0px 10px 0px 10px;
+  margin: 0 15px 0 15px;
 }
 
 .about-me {
@@ -90,7 +120,7 @@ nav  li {
   justify-content: start;
   flex-wrap: wrap;
   color: white;
-  padding-top: 9%;
+  padding-top: 7%;
 }
 
 .download-wrapper {
@@ -114,7 +144,7 @@ nav  li {
   padding-right: 10px;
 }
 
-.resume ul h3, .resume ul li {
+.resume ul h2, .resume ul li {
   font-family: optima;
   list-style: none;
   padding: 1%;
@@ -124,7 +154,8 @@ nav  li {
   margin-top: 2%;
   list-style: none;
   height: 100%;
-  width: 40%
+  width: 40%;
+  font-size: large;
 }
 
 main {
@@ -133,6 +164,32 @@ main {
 
 form {
   width: 40%;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 3%;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+form label {
+  color: white;
+  padding-right: 1%;
+  width: 100%;
+  font-family: optima;
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
+
+.name-wrap, .email-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message-wrap {
+  margin-top: 3%;
 }
 
 textarea {
@@ -141,11 +198,81 @@ textarea {
 	border: 3px solid #cccccc;
 	padding: 5px;
   background-color: white;
+  border-radius: 10px;
+  margin-top: 1%;
 }
 
-input:focus {
+.btn-wrap {
+  margin-top: 5%;
+}
+
+form button {
+  font-weight: bolder;
+  padding: 1%;
+}
+
+form button:hover {
+  opacity: .7;
+}
+
+form input {
+  border-radius: 5px;
+}
+
+form input:focus {
   border: 1px solid white;
   box-shadow: 0 0 .25rem rgba(255, 255, 255, .5);
+}
+
+.portfolio {
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.project img {
+  height: 300px;
+  width: 500px;
+  border: 3px solid white;
+}
+
+.project-title, .project-git {
+  position: relative;
+  bottom: 110%;
+  font-size: 38px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: none;
+  padding: none;
+  color: rgba(155, 0, 0, 0);
+}
+
+.project-icon {
+  height: 75px;
+  width: 75px;
+}
+
+.project-img{
+  margin: 2%;
+  text-align: center;
+  height: 300px;
+}
+
+
+.project-img:hover .image-wrap {
+  opacity: .3;
+}
+
+.project-img:hover .project-title,
+.project-img:hover .project-git{
+  color: red;
 }
 
 footer {
@@ -153,7 +280,11 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 70px;
+  background-color: black;
+  z-index: 1;
 }
 
 .icon {

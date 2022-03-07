@@ -1,31 +1,45 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 function Nav(props) {
+    const {
+        navLinks = [],
+        setcurrentNavLink,
+        currentNavLink,
+    } = props;
+
+    useEffect(() => {
+        document.title = currentNavLink
+    }, [currentNavLink])
+    
     return (
-        <nav>
-            <ul>
-                <li>
-                    <a >
-                        About Me
-                    </a>
-                </li>
-
-                <li>
-                    <span>Portfolio</span>
-                </li>
-
-                <li>
-                    <span>Contact Me</span>
-                </li>
-
-                <li>
-                    <span>Resume</span>
-                </li>
-
-
-            </ul>
-        </nav>
+        <header>
+            <div className='logo-wrap'>
+                <a href="/">
+                    <div className='logo'>
+                        <h2>CM</h2>
+                    </div>
+                    <div className='header-wrapper'>
+                        <h1>Chris McCormack</h1>
+                        <h2>Full Stack Developer</h2>
+                    </div>
+                </a>
+            </div>
+            <nav>
+            <ul className="flex-row">
+                    {navLinks.map(link => (
+                        <li
+                            className={`${currentNavLink === link && 'navActive'}`}
+                            key={link}
+                        >
+                            <span onClick={() => setcurrentNavLink(link)}>
+                                {link}
+                            </span>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </header>
     );
-}
+};
 
 export default Nav;
