@@ -38,13 +38,7 @@ function App() {
         setcurrentNavLink={setcurrentNavLink}
       />
       <main>
-<<<<<<< HEAD
-        <Resume></Resume>
-    {/* <About></About> */}
-    {/* <ContactForm></ContactForm> */}
-=======
         {renderContent(currentNavLink)}
->>>>>>> feature/portfolio
       </main>
       <Footer />
     </>
