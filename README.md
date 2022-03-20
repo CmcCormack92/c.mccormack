@@ -22,7 +22,7 @@
 
 
   ## Usage
-  A place yto display personal projects.
+  A place to display personal projects.
   
   ## License
   This project was created uning the MIT License
