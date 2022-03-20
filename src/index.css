@@ -453,8 +453,12 @@ footer {
     width: 250px;
   }
 
+  .project {
+    padding-bottom: 20%;
+  }
+
   .project-title, .project-git {
-    bottom: 55%;
+    bottom: 5%;
     font-weight: bold;
     text-decoration: none;
     margin: 0;
@@ -466,8 +470,8 @@ footer {
   }
 
   .project-icon {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
 
   .project-img:hover .image-wrap {
