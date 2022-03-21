@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/c.mccormack/precache-manifest.8bc12a2e42df4eca0b9d8672a1f515aa.js"
+  "/c.mccormack-react-portfolio/precache-manifest.a5b1e451ef9cf1a2be46d8aa186a446c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/c.mccormack/index.html", {
+workbox.routing.registerNavigationRoute("/c.mccormack-react-portfolio/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
