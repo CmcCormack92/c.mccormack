@@ -7,9 +7,9 @@ function ProjectList(props) {
 
   const [projects] = useState([
     {
-      name: "Portfolio",
-      url: 'https://cmccormack92.github.io/c.mccormack-react-portfolio/',
-      github: 'https://github.com/CmcCormack92/c.mccormack-react-portfolio'
+      name: "Easy Res V2",
+      url: 'https://easy-res-v2.herokuapp.com/',
+      github: 'https://github.com/robjameva/easy-res-v2'
     },
     {
       name: 'Easy Res',
