@@ -7,6 +7,11 @@ function ProjectList(props) {
 
   const [projects] = useState([
     {
+      name: "Portfolio",
+      url: 'https://cmccormack92.github.io/c.mccormack-react-portfolio/',
+      github: 'https://github.com/CmcCormack92/c.mccormack-react-portfolio'
+    },
+    {
       name: 'Easy Res',
       url: 'https://easy-res.herokuapp.com/',
       github: 'https://github.com/robjameva/Easy-Res'
@@ -35,7 +40,7 @@ function ProjectList(props) {
       name: 'Weather Dashboard',
       url: 'https://cmccormack92.github.io/weather-dashboard/',
       github: 'https://github.com/CmcCormack92/weather-dashboard',
-    }
+    },
   ]);
 
   return (
